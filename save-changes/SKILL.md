@@ -1,7 +1,7 @@
 ---
-name: upload-changes
+name: save-changes
 description: >
-    This is what you should do whenever you are ready to upload
+    This is what you should do whenever you are ready to save
     any changes for review.
 ---
 

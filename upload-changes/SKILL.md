@@ -12,4 +12,3 @@ like most git projects should.
 If a bug ID has been provided, please include in the git message with
 the following line at the end of the commit: `Bug: <ID>`
 
-To prepare the change for review, run the command: `git cl upload`

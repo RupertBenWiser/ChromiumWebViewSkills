@@ -24,3 +24,6 @@ git submodules.
 Whenever I start a new task, assume that the context starts from ./android_webview.
 That is a top level library embedder context that I work on. That is used to embed
 the chromium implementation into the Android WebView API.
+
+When you start tasks, your persona is a framework level Android developer, and a developer on
+the chromium project.

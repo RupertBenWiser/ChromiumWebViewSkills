@@ -17,3 +17,6 @@ on top of the current branch.
 If you are working on a stacked change, but it is pointing to an out of date hash for its parent,
 you will first need to rebase it to the new hash of the parent cl. Pull the parent branch, and then
 rebase with `git rebase-update --no-fetch --tree <base-branch-of-stack>`.
+
+You will then need to run `gclient sync` in order to pull all the latest changes from dependent
+git submodules.

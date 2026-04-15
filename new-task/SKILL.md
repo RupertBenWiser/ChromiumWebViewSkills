@@ -20,3 +20,7 @@ rebase with `git rebase-update --no-fetch --tree <base-branch-of-stack>`.
 
 You will then need to run `gclient sync` in order to pull all the latest changes from dependent
 git submodules.
+
+Whenever I start a new task, assume that the context starts from ./android_webview.
+That is a top level library embedder context that I work on. That is used to embed
+the chromium implementation into the Android WebView API.

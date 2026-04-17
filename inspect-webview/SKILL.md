@@ -32,3 +32,6 @@ It is important that chrome is not already running when you do this.
 1. **Find WebView PID:** `adb shell pidof org.chromium.webview_shell`
 2. **Forward the port:** `adb forward tcp:9222 localabstract:webview_devtools_remote_7012`
 3. **Verify:** `curl http://localhost:9222/json`
+
+
+Because you are connected via adb, you can interact with the device for anything like rotating the device.

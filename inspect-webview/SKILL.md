@@ -24,4 +24,11 @@ Finally you can launch the shell app with `./out/Default/bin/system_webview_shel
 "https://www.google.com" is a safe default.
 
 Use the connected chrome devtools mcp server to interact with the page for your testing.
+Chrome DevTools MCP will default to using chrome on the port 9222 so you should first forward
+the system webview shell to this port before calling the MCP server.
 
+It is important that chrome is not already running when you do this.
+ 
+1. **Find WebView PID:** `adb shell pidof org.chromium.webview_shell`
+2. **Forward the port:** `adb forward tcp:9222 localabstract:webview_devtools_remote_7012`
+3. **Verify:** `curl http://localhost:9222/json`

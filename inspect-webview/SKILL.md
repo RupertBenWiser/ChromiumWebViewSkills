@@ -1,11 +1,14 @@
 ---
-name: verify-changes
+name: inspect-webview
 description: >
-    This skill describes how to verify chromium changes don't have any obvious
-    coding issues.
+    This skill describes how to manually test a webview session and interact with the
+    web contents when they are running.
+    This can be used to verify changes or just see how behaviour works.
 ---
 
 # Manual testing
+Before verifying a change, confirm that you see a device connected with `adb devices`
+
 Whenever you are getting ready to verify a change, run `autoninja -C out/Default system_webview_apk`
 in order to to see if the project builds correctly and if there are any linting issues.
 
